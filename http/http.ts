@@ -28,7 +28,7 @@ const defaultOptions = {
 
 let errorMsgobj = {}
 
-function Toast() {
+function Toast() : void {
   Object.keys(errorMsgobj).map(item => {
     const error = new Error(item)
     console.error(error);
